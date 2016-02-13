@@ -1,5 +1,5 @@
-var React = require('react'),
-	Router = require('react-router');
+import React from 'react';
+import Router from 'react-router';
 
 var Header = React.createClass({
 	render: function() {
@@ -35,16 +35,16 @@ var App = React.createClass({
 	}
 });
 
-var routes = {
+let pages = {
 	Home: require('../routes/Home'),
 	About: require('../routes/About')
 };
 
-var routes = (
+let routes = (
 	<Router.Route name="app" path="/" handler={App}>
-		<Router.Route name="home" path="/" handler={routes.Home}/>
-		<Router.Route name="about" path="/about" handler={routes.About}/>
-		<Router.DefaultRoute handler={routes.Home}/>
+		<Router.Route name="home" path="/" handler={pages.Home}/>
+		<Router.Route name="about" path="/about" handler={pages.About}/>
+		<Router.DefaultRoute handler={pages.Home}/>
 	</Router.Route>
 );
 
