@@ -13,7 +13,7 @@ var Home = React.createClass({
 		];
 
 		let movieImages = movies.map(movie => {
-			let movieImage = `img/${movie.name}`;
+			let movieImage = `img/posters/${movie.name}`;
 			return <Col key={movie.name} xs={6} md={3} >
 				<Image src={movieImage} responsive />
 			</Col>;
