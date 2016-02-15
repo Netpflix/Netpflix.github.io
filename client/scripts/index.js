@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Router from 'react-router';
 
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
@@ -52,5 +53,5 @@ let routes = (
 );
 
 Router.run(routes, Router.HistoryLocation, function (Handler) {
-	React.render(<Handler/>, document.body);
+	ReactDOM.render(<Handler/>, document.body);
 });
