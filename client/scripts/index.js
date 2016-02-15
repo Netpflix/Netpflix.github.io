@@ -20,6 +20,9 @@ var Header = React.createClass({
 		        <Nav pullLeft>
 		          <NavItem eventKey={1} href="#" className="active">Browse</NavItem>
 		        </Nav>
+				<Nav pullRight>
+					<NavItem eventKey={2} href="http://pfoho.harvard.edu">Home</NavItem>
+				</Nav>
 		      </Navbar.Collapse>
 		    </Navbar>
 		);
