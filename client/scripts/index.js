@@ -1,24 +1,27 @@
 import React from 'react';
 import Router from 'react-router';
 
+import {Navbar, Nav, NavItem} from 'react-bootstrap';
+
 var Header = React.createClass({
 	render: function() {
 		return (
-			<div className="page-header">
-				<h1>Netpflix</h1>
-			</div>
-		);
-	}
-});
-
-var PageNav = React.createClass({
-	render: function() {
-		return (
-			<div className="nav">
-				<Router.Link to="home">Home</Router.Link>
-				&nbsp; | &nbsp;
-				<Router.Link to="about">About</Router.Link>
-			</div>
+			<Navbar inverse>
+		      <Navbar.Header>
+		        <Navbar.Brand>
+		          <a href="#">
+					  <img alt="Netpflix" src="img/netpflix-small.png" className="brand-img" />
+		          </a>
+		        </Navbar.Brand>
+		        <Navbar.Toggle />
+		      </Navbar.Header>
+		      <Navbar.Collapse>
+		        <Nav pullRight>
+		          <NavItem eventKey={1} href="#">Link Right</NavItem>
+		          <NavItem eventKey={2} href="#">Link Right</NavItem>
+		        </Nav>
+		      </Navbar.Collapse>
+		    </Navbar>
 		);
 	}
 });
@@ -26,10 +29,11 @@ var PageNav = React.createClass({
 var App = React.createClass({
 	render: function() {
 		return (
-			<div className="container">
+			<div>
 				<Header />
-				<PageNav />
-				<Router.RouteHandler/>
+				<div className="container">
+					<Router.RouteHandler/>
+				</div>
 			</div>
 		);
 	}
