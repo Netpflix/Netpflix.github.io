@@ -3,7 +3,7 @@
 # convert skypfall.png -resize 300x400 -gravity center -extent 300x400 -background black out.png
 
 ## an array of images
-declare -a arr=("skypfall.png" "pfellowship-of-the-ring.png" "pfinding-nemo.png" "pforrest-gump.png" "the-pforz-awakens.png")
+declare -a arr=("skypfall.png" "pfellowship-of-the-ring.png" "pfinding-nemo.png" "pforrest-gump.png" "the-pforz-awakens.png" "back-to-the-pfuture.png")
 
 ## go to image folder
 cd ../public/img
