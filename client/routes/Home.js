@@ -17,6 +17,8 @@ var Home = React.createClass({
         name: "the-pforz-awakens.png"
       }, {
         name: "back-to-the-pfuture.png"
+      }, {
+        name: "pfrozen.jpg"
       }
     ];
 
