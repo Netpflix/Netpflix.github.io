@@ -4,6 +4,8 @@ import Router from 'react-router';
 
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
+var PropTypes = React.PropTypes;
+
 var Header = React.createClass({
   render: function() {
     return (
@@ -29,6 +31,23 @@ var Header = React.createClass({
   }
 });
 
+let Footer = React.createClass({
+  render: function() {
+    return (
+      <footer className="footer well">
+        <div className="container">
+          <p className="text-muted">
+            Created with pflove in Cambridge, MA by <a href="http://hathix.com">Neel Mehta</a>.
+            <br/>
+            <a href="https://github.com/hathix/netpflix">Source on GitHub.</a>
+          </p>
+        </div>
+      </footer>
+    );
+  }
+
+});
+
 var App = React.createClass({
   render: function() {
     return (
@@ -37,6 +56,7 @@ var App = React.createClass({
         <div className="container">
           <Router.RouteHandler/>
         </div>
+        <Footer/>
       </div>
     );
   }
