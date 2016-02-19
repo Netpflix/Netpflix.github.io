@@ -14,11 +14,13 @@ var Home = React.createClass({
     let videoButton;
 
     if (movie.video) {
-        videoButton = <Button bsStyle="danger">Watch</Button>
+        videoButton = <Button bsStyle="danger" block href={movie.video} target="_blank">
+            Watch
+        </Button>
     }
 
     return <Col key={movie.name} xs={6} md={3}>
-        <a href={movie.video} target="_blank" className="thumbnail movie-poster">
+        <div className="thumbnail movie-poster">
           <img src={movieImage} alt={movie.name} />
           <div className="caption">
             <div className="movie-details">
@@ -27,7 +29,7 @@ var Home = React.createClass({
               {videoButton}
             </div>
           </div>
-      </a>
+      </div>
     </Col>;
   },
 
