@@ -22,11 +22,11 @@ var Home = React.createClass({
         image: "pfinding-nemo.png"
       }, {
         name: "Pforrest Gump",
-        description: "Pforrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Anne Harrington, eludes him.",
+        description: "Pforrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Pfoho, eludes him.",
         image: "pforrest-gump.png"
       }, {
         name: "Skypfall",
-        description: "Bond's loyalty to PF is tested when her past comes back to haunt her. Whilst PFI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.",
+        description: "Bond's loyalty to PF is tested when her past comes back to haunt her. Whilst PfI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.",
         image: "skypfall.png"
       }, {
         name: "Star Wars: The Pforz Awakens",
@@ -34,7 +34,7 @@ var Home = React.createClass({
         image: "the-pforz-awakens.png"
       }, {
         name: "Back to the Pfuture",
-        description: "A young man is accidentally sent thirty years into the past in a time-traveling Quad Shuttle invented by his friend, Dr. John Durant, and must make sure his Harvard undergrad parents unite in order to save his own existence.",
+        description: "A young man is accidentally sent thirty years into the past in a time-traveling Quad Shuttle invented by his friend, Dr. Carl Pforzheimer, and must make sure his college-age parents unite in order to save his own existence.",
         image: "back-to-the-pfuture.png"
       }, {
         name: "Pfrozen",
