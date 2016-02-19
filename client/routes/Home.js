@@ -1,14 +1,33 @@
-var React = require('react');
-import {
-  Button,
-  Grid,
-  Row,
-  Col,
-  Image,
-  Thumbnail
-} from 'react-bootstrap';
+import React from 'react';
+import {Button, Grid, Row, Col, Image, Thumbnail, Modal} from 'react-bootstrap';
 
 var Home = React.createClass({
+  getInitialState: function() {
+    return {
+      // The video currently being shown up in a modal
+      video: null
+    };
+  },
+
+  /**
+   * Loads a modal showing the video at the given URL.
+   */
+  openVideo: function(video) {
+    console.log("open", video);
+    this.setState({video: video});
+  },
+
+  test: function() {
+      console.log("test");
+  },
+
+  /**
+   * Closes the video modal.
+   */
+  closeVideo: function() {
+    this.setState({video: null});
+  },
+
   /**
      * Creates a poster element for a movie containing its image, name,
      * 	description, etc.
@@ -17,18 +36,21 @@ var Home = React.createClass({
      */
   posterForMovie: function(movie) {
     let movieImage = `img/posters/${movie.image}`;
+
     return <Col key={movie.name} xs={6} md={3}>
-      <Thumbnail src={movieImage} alt={movie.name} className="movie-poster">
-        <div className="movie-details">
-          <h4>{movie.name}</h4>
-          <p>{movie.description}</p>
-        </div>
-      </Thumbnail>
+        <a href={movie.video} target="_blank" className="thumbnail movie-poster">
+          <img src={movieImage} alt={movie.name} />
+          <div className="caption">
+            <div className="movie-details">
+              <h4>{movie.name}</h4>
+              <p>{movie.description}</p>
+            </div>
+          </div>
+      </a>
     </Col>;
   },
 
   render: function() {
-
     // Different states of movies: recently watched, currently popular, new
     // arrivals, etc.
     const categories = {
@@ -118,6 +140,18 @@ var Home = React.createClass({
 
         <h4>Recently Viewed</h4>
         {wrapInGrid(posters.recent)}
+
+        <Modal show={this.state.video} onHide={this.closeVideo}>
+          <Modal.Header closeButton>
+            <Modal.Title>
+              Video!!
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            One fine body...
+          </Modal.Body>
+        </Modal>
+
       </div>
     );
   }
