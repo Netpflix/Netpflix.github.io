@@ -106,7 +106,7 @@ var Home = React.createClass({
 
     return (
       <div>
-        <h4>New Arrivals</h4>
+        <h4>New Releases</h4>
         {wrapInGrid(posters.newArrivals)}
 
         <h4>Popular on Netpflix</h4>
