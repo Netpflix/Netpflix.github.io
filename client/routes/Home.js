@@ -1,33 +1,7 @@
 import React from 'react';
-import {Button, Grid, Row, Col, Image, Thumbnail, Modal} from 'react-bootstrap';
+import {Button, Grid, Row, Col, Image} from 'react-bootstrap';
 
 var Home = React.createClass({
-  getInitialState: function() {
-    return {
-      // The video currently being shown up in a modal
-      video: null
-    };
-  },
-
-  /**
-   * Loads a modal showing the video at the given URL.
-   */
-  openVideo: function(video) {
-    console.log("open", video);
-    this.setState({video: video});
-  },
-
-  test: function() {
-      console.log("test");
-  },
-
-  /**
-   * Closes the video modal.
-   */
-  closeVideo: function() {
-    this.setState({video: null});
-  },
-
   /**
      * Creates a poster element for a movie containing its image, name,
      * 	description, etc.
@@ -140,17 +114,6 @@ var Home = React.createClass({
 
         <h4>Recently Viewed</h4>
         {wrapInGrid(posters.recent)}
-
-        <Modal show={this.state.video} onHide={this.closeVideo}>
-          <Modal.Header closeButton>
-            <Modal.Title>
-              Video!!
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            One fine body...
-          </Modal.Body>
-        </Modal>
 
       </div>
     );
