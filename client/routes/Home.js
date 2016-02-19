@@ -11,6 +11,12 @@ var Home = React.createClass({
   posterForMovie: function(movie) {
     let movieImage = `img/posters/${movie.image}`;
 
+    let videoButton;
+
+    if (movie.video) {
+        videoButton = <Button bsStyle="danger">Watch</Button>
+    }
+
     return <Col key={movie.name} xs={6} md={3}>
         <a href={movie.video} target="_blank" className="thumbnail movie-poster">
           <img src={movieImage} alt={movie.name} />
@@ -18,6 +24,7 @@ var Home = React.createClass({
             <div className="movie-details">
               <h4>{movie.name}</h4>
               <p>{movie.description}</p>
+              {videoButton}
             </div>
           </div>
       </a>
@@ -76,8 +83,8 @@ var Home = React.createClass({
       }, {
         name: "Pfrozen",
         description: `When the newly crowned Queen Elsa accidentally uses her power to turn things into
-            ice to curse the Quad in infinite winter, her sister, Anna, teams up with a Pf
-            oho man, his playful polar bear, and a snowman to change the weather condition.`,
+            ice to curse the Quad in infinite winter, her sister, Anna, teams up with a Pfoho man,
+            his playful polar bear, and a snowman to change the weather condition.`,
         category: categories.RECENT,
         image: "pfrozen.jpg",
         video: "https://www.youtube.com/watch?v=uKPrkR1wkfA"
