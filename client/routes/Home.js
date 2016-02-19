@@ -23,7 +23,7 @@ var Home = React.createClass({
           <div className="caption">
             <div className="movie-details">
               <h4>{movie.name}</h4>
-              <p>{movie.description}</p>
+              <p className="hidden-xs">{movie.description}</p>
               {videoButton}
             </div>
           </div>
