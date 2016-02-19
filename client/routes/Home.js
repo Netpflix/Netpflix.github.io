@@ -45,7 +45,7 @@ var Home = React.createClass({
     let movies = [
       {
         name: "The Pfellowship of the Ring",
-        description: `A meek Quadling and seven companions set out on a journey to destroy the
+        description: `A meek Quadling and seven blockmates set out on a journey to destroy the
             One Ring and the Dark Lord Adams.`,
         category: categories.POPULAR,
         image: "pfellowship-of-the-ring.png"
