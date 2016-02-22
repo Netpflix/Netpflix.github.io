@@ -1,11 +1,15 @@
 import React from 'react';
 import {Button, Grid, Row, Col, Image} from 'react-bootstrap';
 
+/**
+ * A movie poster containing its image, name, description, etc.
+ * Props:
+ * 	movie {Object}     a movie object
+ */
 let MoviePoster = React.createClass({
     /**
        * Creates a poster element for a movie containing its image, name,
        * 	description, etc.
-       * @param  {Object} movie
        * @return {<Col>}       a React element
      */
     render: function() {
@@ -20,18 +24,35 @@ let MoviePoster = React.createClass({
             </Button>
         }
 
-        return <Col key={movie.name} xs={6} md={3}>
-            <div className="thumbnail movie-poster">
-              <img src={movieImage} alt={movie.name} />
-              <div className="caption">
-                <div className="movie-details">
-                  <h4>{movie.name}</h4>
-                  <p className="hidden-xs">{movie.description}</p>
-                  {videoButton}
-                </div>
+        if (movie.featured) {
+            return <Col key={movie.name} xs={6} md={3}>
+                <div className="thumbnail movie-poster">
+                  <img src={movieImage} alt={movie.name} />
+                  <div className="caption">
+                    <div className="movie-details">
+                      <h4>{movie.name}</h4>
+                      <p className="hidden-xs">{movie.description}</p>
+                      {videoButton}
+                    </div>
+                  </div>
               </div>
-          </div>
-        </Col>;
+            </Col>;
+        }
+        else {
+            // use a standard small poster
+            return <Col key={movie.name} xs={6} md={3}>
+                <div className="thumbnail movie-poster">
+                  <img src={movieImage} alt={movie.name} />
+                  <div className="caption">
+                    <div className="movie-details">
+                      <h4>{movie.name}</h4>
+                      <p className="hidden-xs">{movie.description}</p>
+                      {videoButton}
+                    </div>
+                  </div>
+              </div>
+            </Col>;
+        }
     }
 })
 
@@ -52,33 +73,38 @@ var Home = React.createClass({
                   River Order attempts to rule the College and only a ragtag group of heroes can stop them,
                   along with the help of the Pfresistance.`,
         category: categories.NEW_ARRIVAL,
-        image: "the-pforz-awakens.png"
+        image: "the-pforz-awakens.png",
+        featured: true
       }, {
         name: "The Pfellowship of the Ring",
         description: `A meek Quadling and seven blockmates set out on a journey to destroy the
                 One Ring and the Dark Lord Adams.`,
         category: categories.POPULAR,
-        image: "pfellowship-of-the-ring.png"
+        image: "pfellowship-of-the-ring.png",
+        featured: false
       }, {
         name: "Pfinding Nemo",
         description: `After his son is captured in the Charles River Reef and taken to Mather House, a
                 timid clownfish sets out on a journey to bring him Pfohome.`,
         category: categories.POPULAR,
-        image: "pfinding-nemo.png"
+        image: "pfinding-nemo.png",
+        featured: false
       }, {
         name: "Back to the Pfuture",
         description: `A young man is accidentally sent thirty years into the past in a time-traveling
                 Quad Shuttle invented by his friend, Dr. Carl Pforzheimer, and must make sure his
                 college-age parents unite in order to save his own existence.`,
         category: categories.POPULAR,
-        image: "back-to-the-pfuture.png"
+        image: "back-to-the-pfuture.png",
+        featured: false
       }, {
         name: "Skypfall",
         description: `Bond's loyalty to PF is tested when her past comes back to haunt her. Whilst
                 PfI6 comes under attack, 007 must track down and destroy the threat, no matter how
                 personal the cost.`,
         category: categories.POPULAR,
-        image: "skypfall.png"
+        image: "skypfall.png",
+        featured: false
       }, {
         name: "Pfrozen",
         description: `When the newly crowned Queen Elsa accidentally uses her power to turn things into
@@ -86,7 +112,8 @@ var Home = React.createClass({
                 his playful polar bear, and a snowman to change the weather condition.`,
         category: categories.RECENT,
         image: "pfrozen.jpg",
-        video: "https://www.youtube.com/watch?v=uKPrkR1wkfA"
+        video: "https://www.youtube.com/watch?v=uKPrkR1wkfA",
+        featured: true
       }
     ];
 
