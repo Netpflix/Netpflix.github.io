@@ -1,7 +1,7 @@
 # Netpflix
 Housing day website for [Pforzheimer House](http://pfoho.harvard.edu) (nicknamed Pfoho), the best of Harvard College's 12 undergraduate houses.
 
-Check it out at [http://netpflix.herokuapp.com](http://netpflix.herokuapp.com), or run it yourself (see below.)
+Check it out at [netpflix.com](http://www.netpflix.com), or run it yourself (see below.)
 
 ## About
 Every March on Housing Day, Harvard freshmen learn which upperclassman House they will be assigned to (if Pfoho, this is cause for great celebration; if not, well, hopefully you have friends there.)
