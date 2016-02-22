@@ -9,7 +9,7 @@ var PropTypes = React.PropTypes;
 var Header = React.createClass({
   render: function() {
     return (
-      <Navbar inverse>
+      <Navbar inverse fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="/">
@@ -53,7 +53,7 @@ var App = React.createClass({
     return (
       <div>
         <Header/>
-        <div className="container">
+        <div className="container" id="page-main">
           <Router.RouteHandler/>
         </div>
         <Footer/>
