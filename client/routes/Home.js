@@ -34,7 +34,7 @@ let MoviePoster = React.createClass({
                 <Grid fluid>
                   <Row>
                     <Col xs={6} md={3}>
-                      <img src={movieImage} alt={movie.name} className="img-responsive movie-poster" responsive/>
+                      <img src={movieImage} alt={movie.name} className="img-responsive" responsive/>
                     </Col>
                     <Col xs={6} md={9}>
                       <div className="">
