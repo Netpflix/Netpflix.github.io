@@ -9,7 +9,7 @@ Every March on Housing Day, Harvard freshmen learn which upperclassman House the
 Prior to Housing Day, every House releases a Housing Day video to get students excited about the Houses. [Pfoho always has the best Housing Day videos](http://www.thecrimson.com/flyby/article/2014/3/15/2014-housing-day-video-rankings/), but why stop there? For 2016, we're releasing our very own Housing Day website to accompany the video. Enjoy!
 
 ## Technology stack
-Generated using [generator-react-express](https://github.com/JedWatson/generator-react-express). Built, naturally, off of React and Node.js/Express.
+Generated using [generator-react-express](https://github.com/JedWatson/generator-react-express). Built, naturally, off of React and Node.js/Express. Deployed and hosted with [Heroku](http://netpflix.herokuapp.com).
 
 ## Running
 Clone the app and execute:

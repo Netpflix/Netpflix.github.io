@@ -1,38 +1,41 @@
 import React from 'react';
 import {Button, Grid, Row, Col, Image} from 'react-bootstrap';
 
-var Home = React.createClass({
-  /**
-     * Creates a poster element for a movie containing its image, name,
-     * 	description, etc.
-     * @param  {Object} movie
-     * @return {<Col>}       a React element
+let MoviePoster = React.createClass({
+    /**
+       * Creates a poster element for a movie containing its image, name,
+       * 	description, etc.
+       * @param  {Object} movie
+       * @return {<Col>}       a React element
      */
-  posterForMovie: function(movie) {
-    let movieImage = `img/posters/${movie.image}`;
+    render: function() {
+        let movie = this.props.movie;
 
-    let videoButton;
+        let movieImage = `img/posters/${movie.image}`;
 
-    if (movie.video) {
-        videoButton = <Button bsStyle="danger" block href={movie.video} target="_blank">
-            Watch
-        </Button>
-    }
+        let videoButton;
+        if (movie.video) {
+            videoButton = <Button bsStyle="danger" block href={movie.video} target="_blank">
+                Watch
+            </Button>
+        }
 
-    return <Col key={movie.name} xs={6} md={3}>
-        <div className="thumbnail movie-poster">
-          <img src={movieImage} alt={movie.name} />
-          <div className="caption">
-            <div className="movie-details">
-              <h4>{movie.name}</h4>
-              <p className="hidden-xs">{movie.description}</p>
-              {videoButton}
-            </div>
+        return <Col key={movie.name} xs={6} md={3}>
+            <div className="thumbnail movie-poster">
+              <img src={movieImage} alt={movie.name} />
+              <div className="caption">
+                <div className="movie-details">
+                  <h4>{movie.name}</h4>
+                  <p className="hidden-xs">{movie.description}</p>
+                  {videoButton}
+                </div>
+              </div>
           </div>
-      </div>
-    </Col>;
-  },
+        </Col>;
+    }
+})
 
+var Home = React.createClass({
   render: function() {
     // Different states of movies: recently watched, currently popular, new
     // arrivals, etc.
@@ -101,7 +104,7 @@ var Home = React.createClass({
      */
     let postersByCategory = (movies, category) => movies
       .filter(movie => movie.category == category)
-      .map(this.posterForMovie);
+      .map(movie => <MoviePoster movie={movie} />);
 
     let posters = {
       popular: postersByCategory(movies, categories.POPULAR),
