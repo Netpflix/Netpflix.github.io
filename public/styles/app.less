@@ -8,6 +8,7 @@
 @import "../../node_modules/bootswatch/cyborg/bootswatch.less";
 // Constants
 @poster_hover_scale: 1.2;
+@white: #EEE;
 // Rules
 #page-main {
     // to account for sticky header bar
@@ -39,8 +40,6 @@
     border-radius: inherit;
     background: rgba(0, 0, 0, 0.5);
 
-    color: #EEE;
-
     h4 {
         font-size: 18px;
     }
@@ -55,6 +54,10 @@
       display: block;
     }
   }
+}
+
+.white-text {
+    color: @white;
 }
 
 .footer {

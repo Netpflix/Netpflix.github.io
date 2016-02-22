@@ -1,5 +1,7 @@
 import React from 'react';
-import {Button, Grid, Row, Col, Image} from 'react-bootstrap';
+import {Button, Grid, Row, Col, Image, Well, Label} from 'react-bootstrap';
+
+import FontAwesome from '../components/FontAwesome';
 
 /**
  * A movie poster containing its image, name, description, etc.
@@ -19,23 +21,44 @@ let MoviePoster = React.createClass({
 
         let videoButton;
         if (movie.video) {
-            videoButton = <Button bsStyle="danger" block href={movie.video} target="_blank">
+            let size = movie.featured ? "large" : "";
+            videoButton = <Button bsStyle="danger" bsSize={size} block href={movie.video} target="_blank">
+                <FontAwesome icon="play"></FontAwesome> &nbsp;
                 Watch
             </Button>
         }
 
         if (movie.featured) {
-            return <Col key={movie.name} xs={6} md={3}>
-                <div className="thumbnail movie-poster">
-                  <img src={movieImage} alt={movie.name} />
-                  <div className="caption">
-                    <div className="movie-details">
-                      <h4>{movie.name}</h4>
-                      <p className="hidden-xs">{movie.description}</p>
-                      {videoButton}
-                    </div>
-                  </div>
-              </div>
+            return <Col key={movie.name} xs={12} md={12}>
+              <Well>
+                <Grid fluid>
+                  <Row>
+                    <Col xs={6} md={3}>
+                      <img src={movieImage} alt={movie.name} className="img-responsive movie-poster" responsive/>
+                    </Col>
+                    <Col xs={6} md={9}>
+                      <div className="">
+                        <h3>{movie.name}</h3>
+
+                        <h5>
+                            <span className="text-danger">
+                                <FontAwesome icon="star"></FontAwesome>
+                                <FontAwesome icon="star"></FontAwesome>
+                                <FontAwesome icon="star"></FontAwesome>
+                                <FontAwesome icon="star"></FontAwesome>
+                                <FontAwesome icon="star"></FontAwesome>
+                            </span>
+                            &nbsp; &nbsp;
+                            <Label>{movie.year}</Label>
+                        </h5>
+
+                        <p className="lead">{movie.description}</p>
+                        {videoButton}
+                      </div>
+                    </Col>
+                  </Row>
+                </Grid>
+              </Well>
             </Col>;
         }
         else {
@@ -46,7 +69,7 @@ let MoviePoster = React.createClass({
                   <div className="caption">
                     <div className="movie-details">
                       <h4>{movie.name}</h4>
-                      <p className="hidden-xs">{movie.description}</p>
+                      <p className="hidden-xs white-text">{movie.description}</p>
                       {videoButton}
                     </div>
                   </div>
@@ -74,6 +97,7 @@ var Home = React.createClass({
                   along with the help of the Pfresistance.`,
         category: categories.NEW_ARRIVAL,
         image: "the-pforz-awakens.png",
+        year: 2016,
         featured: true
       }, {
         name: "The Pfellowship of the Ring",
@@ -113,6 +137,7 @@ var Home = React.createClass({
         category: categories.RECENT,
         image: "pfrozen.jpg",
         video: "https://www.youtube.com/watch?v=uKPrkR1wkfA",
+        year: 2014,
         featured: true
       }
     ];
@@ -139,7 +164,7 @@ var Home = React.createClass({
       newArrivals: postersByCategory(movies, categories.NEW_ARRIVAL)
     };
 
-    let wrapInGrid = (posters) => <Grid>
+    let wrapInGrid = (posters) => <Grid fluid>
       <Row>
         {posters}
       </Row>
@@ -147,13 +172,13 @@ var Home = React.createClass({
 
     return (
       <div>
-        <h4>New Releases</h4>
+        <h3>New Releases</h3>
         {wrapInGrid(posters.newArrivals)}
 
-        <h4>Popular on Netpflix</h4>
+        <h3>Popular on Netpflix</h3>
         {wrapInGrid(posters.popular)}
 
-        <h4>Recently Viewed</h4>
+        <h3>Recently Viewed</h3>
         {wrapInGrid(posters.recent)}
 
       </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from 'react-router';
-
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
 var PropTypes = React.PropTypes;
