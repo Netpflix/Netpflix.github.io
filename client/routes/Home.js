@@ -135,7 +135,7 @@ var Home = React.createClass({
                 ice to curse the Quad in infinite winter, her sister, Anna, teams up with a Pfoho man,
                 his playful polar bear, and a snowman to change the weather condition.`,
         category: categories.RECENT,
-        image: "pfrozen.jpg",
+        image: "pfrozen.png",
         video: "https://www.youtube.com/watch?v=uKPrkR1wkfA",
         year: 2014,
         featured: true
