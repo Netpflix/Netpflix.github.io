@@ -92,7 +92,7 @@ var Home = React.createClass({
     let movies = [
       {
         name: "Star Wars: The Pforz Awakens",
-        description: `Three decades after the defeat of the Quadrangle Empire, a new threat arises. The
+        description: `Three decades after the defeat of the Harvard Yard Empire, a new threat arises. The
                   River Order attempts to rule the College and only a ragtag group of heroes can stop them,
                   along with the help of the Pfresistance.`,
         category: categories.NEW_ARRIVAL,
