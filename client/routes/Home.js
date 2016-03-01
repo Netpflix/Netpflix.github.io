@@ -72,9 +72,7 @@ let MoviePoster = React.createClass({
             // use a standard small poster
             let yearLabel = null;
             if (movie.year) {
-                yearLabel = <span className="pull-right">
-                    <Label>{movie.year}</Label>
-                </span>;
+                yearLabel = <Label className="pull-right">{movie.year}</Label>;
             }
 
             return <Col key={movie.name} xs={6} md={3}>
