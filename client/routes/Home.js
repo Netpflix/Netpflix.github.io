@@ -70,12 +70,22 @@ let MoviePoster = React.createClass({
         }
         else {
             // use a standard small poster
+            let yearLabel = null;
+            if (movie.year) {
+                yearLabel = <span className="pull-right">
+                    <Label>{movie.year}</Label>
+                </span>;
+            }
+
             return <Col key={movie.name} xs={6} md={3}>
                 <div className="thumbnail movie-poster">
                   <img src={movieImage} alt={movie.name} />
                   <div className="caption">
                     <div className="movie-details">
-                      <h4>{movie.name}</h4>
+                      <h4>
+                          {movie.name}
+                          {yearLabel}
+                      </h4>
                       <p className="hidden-xs white-text">{movie.description}</p>
                       {videoButton}
                     </div>
@@ -100,8 +110,8 @@ var Home = React.createClass({
       {
         name: "Star Wars: The Pforz Awakens",
         description: `Three decades after the defeat of the Harvard Yard Empire, a new threat arises. The
-                  River Order attempts to rule the College and only a ragtag group of heroes can stop them,
-                  along with the help of the Pfresistance.`,
+                      River Order attempts to rule the College and only a ragtag group of heroes can stop them,
+                      along with the help of the Pfresistance.`,
         category: categories.NEW_ARRIVAL,
         image: "the-pforz-awakens.png",
         year: 2016,
@@ -110,43 +120,52 @@ var Home = React.createClass({
       }, {
         name: "The Pfellowship of the Ring",
         description: `A meek Quadling and seven blockmates set out on a journey to destroy the
-                One Ring and the Dark Lord Adams.`,
+                    One Ring and the Dark Lord Adams.`,
         category: categories.POPULAR,
         image: "pfellowship-of-the-ring.png",
         featured: false
       }, {
         name: "Pfinding Nemo",
         description: `After his son is captured in the Charles River Reef and taken to Mather House, a
-                timid clownfish sets out on a journey to bring him Pfohome.`,
+                    timid clownfish sets out on a journey to bring him Pfohome.`,
         category: categories.POPULAR,
         image: "pfinding-nemo.png",
         featured: false
       }, {
         name: "Back to the Pfuture",
         description: `A young man is accidentally sent thirty years into the past in a time-traveling
-                Quad Shuttle invented by his friend, Dr. Carl Pforzheimer, and must make sure his
-                college-age parents unite in order to save his own existence.`,
+                    Quad Shuttle invented by his friend, Dr. Carl Pforzheimer, and must make sure his
+                    college-age parents unite in order to save his own existence.`,
         category: categories.POPULAR,
         image: "back-to-the-pfuture.png",
         featured: false
       }, {
         name: "Skypfall",
         description: `Bond's loyalty to PF is tested when her past comes back to haunt her. Whilst
-                PfI6 comes under attack, 007 must track down and destroy the threat, no matter how
-                personal the cost.`,
+                    PfI6 comes under attack, 007 must track down and destroy the threat, no matter how
+                    personal the cost.`,
         category: categories.POPULAR,
         image: "skypfall.png",
         featured: false
       }, {
         name: "Pfrozen",
         description: `When the newly crowned Queen Elsa accidentally uses her power to turn things into
-                ice to curse the Quad in infinite winter, her sister, Anna, teams up with a Pfoho man,
-                his playful polar bear, and a snowman to change the weather condition.`,
+                    ice to curse the Quad in infinite winter, her sister, Anna, teams up with a Pfoho man,
+                    his playful polar bear, and a snowman to change the weather condition.`,
         category: categories.RECENT,
         image: "pfrozen.png",
         video: "https://www.youtube.com/watch?v=uKPrkR1wkfA",
         year: 2014,
-        featured: true
+        featured: false
+      }, {
+        name: "Downpfall",
+        description: `Traudl Junge, the final secretary for Adolf Hitler, tells of the Nazi dictator's
+            final days in his freshman dorm before he gets sentenced to the River houses.`,
+        category: categories.RECENT,
+        image: "downpfall.png",
+        video: "https://www.youtube.com/watch?v=ViEcI5FC5pc",
+        year: 2010,
+        featured: false
       }
     ];
 
