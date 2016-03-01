@@ -162,7 +162,7 @@ var Home = React.createClass({
         description: `Traudl Junge, the final secretary for Adolf Hitler, tells of the Nazi dictator's
             final days in his freshman dorm before he is sentenced to the River houses.`,
         category: categories.RECENT,
-        image: "downpfall.png",
+        image: "downpfall.jpg",
         video: "https://www.youtube.com/watch?v=ViEcI5FC5pc",
         year: 2010,
         featured: false
