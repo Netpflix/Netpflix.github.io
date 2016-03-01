@@ -27,11 +27,11 @@ let MoviePoster = React.createClass({
                 <FontAwesome icon="play"></FontAwesome> &nbsp;
                 Watch
             </Button>;
-        } else if (movie.upcomingReleaseDate) {
+        } else if (movie.comingSoon) {
             // otherwise, if one's coming soon, show a simple button advertising that
             videoButton = <Button bsStyle="danger" bsSize={size} disabled block>
                 <FontAwesome icon="clock-o"></FontAwesome> &nbsp;
-                Coming {movie.upcomingReleaseDate}
+                Coming soon
             </Button>;
         }
 
@@ -105,7 +105,7 @@ var Home = React.createClass({
         category: categories.NEW_ARRIVAL,
         image: "the-pforz-awakens.png",
         year: 2016,
-        upcomingReleaseDate: "March 10th",
+        comingSoon: true,
         featured: true
       }, {
         name: "The Pfellowship of the Ring",
