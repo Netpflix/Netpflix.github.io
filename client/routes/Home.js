@@ -20,12 +20,19 @@ let MoviePoster = React.createClass({
         let movieImage = `img/posters/${movie.image}`;
 
         let videoButton;
+        let size = movie.featured ? "large" : "";
         if (movie.video) {
-            let size = movie.featured ? "large" : "";
+            // show a link to the video if one exists
             videoButton = <Button bsStyle="danger" bsSize={size} block href={movie.video} target="_blank">
                 <FontAwesome icon="play"></FontAwesome> &nbsp;
                 Watch
-            </Button>
+            </Button>;
+        } else if (movie.upcomingReleaseDate) {
+            // otherwise, if one's coming soon, show a simple button advertising that
+            videoButton = <Button bsStyle="danger" bsSize={size} disabled block>
+                <FontAwesome icon="clock-o"></FontAwesome> &nbsp;
+                Coming {movie.upcomingReleaseDate}
+            </Button>;
         }
 
         if (movie.featured) {
@@ -98,6 +105,7 @@ var Home = React.createClass({
         category: categories.NEW_ARRIVAL,
         image: "the-pforz-awakens.png",
         year: 2016,
+        upcomingReleaseDate: "March 10th",
         featured: true
       }, {
         name: "The Pfellowship of the Ring",
@@ -172,15 +180,14 @@ var Home = React.createClass({
 
     return (
       <div>
-        <h3>New Releases</h3>
+        <h3>Coming Soon to Netpflix</h3>
         {wrapInGrid(posters.newArrivals)}
-
-        <h3>Popular on Netpflix</h3>
-        {wrapInGrid(posters.popular)}
 
         <h3>Recently Viewed</h3>
         {wrapInGrid(posters.recent)}
 
+        <h3>Popular on Netpflix</h3>
+        {wrapInGrid(posters.popular)}
       </div>
     );
   }
