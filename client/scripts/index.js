@@ -32,13 +32,14 @@ var Header = React.createClass({
 
 let Footer = React.createClass({
   render: function() {
+      let year = new Date().getFullYear();
     return (
       <footer className="footer well">
         <div className="container">
           <p className="text-muted">
-            Created with pflove in Cambridge, MA by <a href="http://hathix.com">Neel Mehta</a>.
-            <br/>
-            <a href="https://github.com/hathix/netpflix">Source on GitHub.</a>
+              Copyright &copy; {year} <a href="http://pfoho.harvard.edu">Pforzheimer House</a> and <a href="http://hathix.com">Neel Mehta</a>.
+              <br />
+              <a href="https://github.com/hathix/netpflix">Source on GitHub.</a>
           </p>
         </div>
       </footer>
