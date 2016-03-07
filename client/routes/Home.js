@@ -112,8 +112,9 @@ var Home = React.createClass({
                       along with the help of the Pfresistance.`,
         category: categories.NEW_ARRIVAL,
         image: "the-pforz-awakens.png",
+        video: "https://www.youtube.com/watch?v=C-NtdRXpZTo",
         year: 2016,
-        comingSoon: true,
+        // comingSoon: true,
         featured: true
       }, {
         name: "The Pfellowship of the Ring",
@@ -197,7 +198,7 @@ var Home = React.createClass({
 
     return (
       <div>
-        <h3>Coming Soon to Netpflix</h3>
+        <h3>New on Netpflix</h3>
         {wrapInGrid(posters.newArrivals)}
 
         <h3>Recently Viewed</h3>
