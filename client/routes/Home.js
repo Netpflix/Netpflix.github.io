@@ -106,16 +106,27 @@ var Home = React.createClass({
 
     let movies = [
       {
+        name: "Pfoana",
+        description: `In Ancient Harvard Yard, when mumps strikes an impetuous Dean's daughter's dorm room, 
+                      she answers Drew Faust's call to travel to Pforzheimer House to set things right.`,
+        category: categories.NEW_ARRIVAL,
+        image: "pfoana.jpg",
+        video: "https://www.youtube.com/watch?v=C-NtdRXpZTo",
+        year: 2017,
+        // comingSoon: true,
+        featured: true
+      },
+      {
         name: "Star Wars: The Pforz Awakens",
         description: `Three decades after the defeat of the Harvard Yard Empire, a new threat arises. The
                       River Order attempts to rule the College and only a ragtag group of heroes can stop them,
                       along with the help of the Pfresistance.`,
-        category: categories.NEW_ARRIVAL,
+        category: categories.RECENT,
         image: "the-pforz-awakens.png",
         video: "https://www.youtube.com/watch?v=C-NtdRXpZTo",
         year: 2016,
         // comingSoon: true,
-        featured: true
+        featured: false
       }, {
         name: "The Pfellowship of the Ring",
         description: `A meek Quadling and seven blockmates set out on a journey to destroy the
