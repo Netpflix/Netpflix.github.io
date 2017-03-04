@@ -112,6 +112,7 @@ var Home = React.createClass({
         category: categories.NEW_ARRIVAL,
         image: "pfoana.jpg",
         video: "https://www.youtube.com/watch?v=E8iCMaucC7E",
+
         year: 2017,
         // comingSoon: true,
         featured: true
@@ -125,7 +126,6 @@ var Home = React.createClass({
         image: "the-pforz-awakens.png",
         video: "https://www.youtube.com/watch?v=C-NtdRXpZTo",
         year: 2016,
-        // comingSoon: true,
         featured: false
       }, {
         name: "The Pfellowship of the Ring",
@@ -176,16 +176,19 @@ var Home = React.createClass({
         video: "https://www.youtube.com/watch?v=ViEcI5FC5pc",
         year: 2010,
         featured: false
-      }
-    ];
+    },
 
+    // eh not a great poster
     // {
     //   name: "Pforrest Gump",
     //   description: `Pforrest Gump, while not intelligent, has accidentally been present at many
-    //       historic moments, but his true love, Pfoho, eludes him.`,
+    //           historic moments, but his true love, Pfoho, eludes him.`,
     //   category: categories.POPULAR,
     //   image: "pforrest-gump.png"
-    // },
+    // }
+    ];
+
+
 
     /**
      * Given a list of movies and a category, reutrns posters of movies in
