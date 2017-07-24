@@ -6,7 +6,7 @@ Check it out at [netpflix.com](http://www.netpflix.com), or run it yourself (see
 ## About
 Every March on Housing Day, Harvard freshmen learn which upperclassman House they will be assigned to (if Pfoho, this is cause for great celebration; if not, well, hopefully you have friends there.)
 
-Prior to Housing Day, every House releases a Housing Day video to get students excited about the Houses. [Pfoho always has the best Housing Day videos](http://www.thecrimson.com/flyby/article/2014/3/15/2014-housing-day-video-rankings/), but why stop there? This year, we're releasing our very own Housing Day website to accompany the video. Enjoy!
+Prior to Housing Day, every House releases a Housing Day video to get students excited about the Houses. [Pfoho always has the best Housing Day videos](http://www.thecrimson.com/flyby/article/2014/3/15/2014-housing-day-video-rankings/), but why stop there? From now on, we'll be releasing our very own Housing Day website to accompany the video. Enjoy!
 
 ## Technology stack
 Generated using [generator-react-express](https://github.com/JedWatson/generator-react-express). Built, naturally, off of React and Node.js/Express. Deployed and hosted with [Heroku](http://netpflix.herokuapp.com).
