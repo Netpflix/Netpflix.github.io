@@ -1,0 +1,168 @@
+---
+---
+
+// Swipe to Unlock SCSS
+// Jekyll auto-compiles this to css
+/**
+ * VARIABLES
+ */
+$stu_blue: #33B5E5;
+$stu_white: white;
+
+
+/**
+ * DECLARATIONS
+ */
+// fonts
+// @include @font-face(LeagueGothic, ../fonts/LeagueGothic/LeagueGothic-Regular);
+@font-face {
+  font-family: "LeagueGothic";
+  src: url("../fonts/League-Gothic/LeagueGothic-Regular.otf");
+}
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  padding-top: 50px;
+}
+
+.navbar {
+  text-transform: uppercase !important;
+}
+
+.navbar-brand {
+  font-family: LeagueGothic !important;
+  font-size: 32px;
+}
+
+.centered {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#the_idea {
+  background-image: url("../img/the_idea_background.png");
+  background-position: center right;
+  background-size: cover;
+  min-height: 350px;
+  /* Use Flexbox to vertically center content */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#idea_core {
+  flex: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+.frosted-overlay {
+  background: rgba(255, 255, 255, 0.68);
+  padding: 1em;
+}
+
+.topic-card {
+  max-width: 564px;
+  text-align: center;
+  color: $stu_white;
+  background-position: top center;
+}
+
+#card-bigdata {
+  background-image: url("../img/bigdata.png");
+}
+
+#card-thecloud {
+  background-image: url("../img/thecloud.png");
+}
+
+#card-internetsecurity {
+  background-image: url("../img/internetsecurity.png");
+}
+
+.author-section {
+  // margin-top: -200px;
+}
+
+.slider-bar {
+  // background-image: url("../img/blue-swipe-ribbon.png");
+
+  background-color: $stu_blue;
+  // TODO: in SASS, don't hardcode this.
+  // the 97px is half the 194px width.
+  // this is complicated by the / sign... overloaded between dividing and the CSS use
+  border-radius: 97px / 65px;
+
+  width: 194px;
+  padding: 2em;
+  color: $stu_white;
+  text-align: center;
+  height: 480px;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding-top: 230px;
+  margin-top: -200px;
+  // padding-top: 200px;
+}
+
+.author-pic {
+  max-width: 230px;
+  text-align: center;
+  margin: auto;
+  // position: relative;
+  // bottom: -200px;
+
+  // shadowing
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.social-badges i {
+  /*border-radius: 50%;
+    background-color: white;
+    padding: 0.3em;*/
+  padding: 0.3em;
+}
+
+.section {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.section-primary {
+  color: $stu_white !important;
+  background: $stu_blue;
+}
+
+.section-super-padded {
+  padding-top: 5em;
+  padding-bottom: 6em;
+}
+
+.link-white {
+  color: $stu_white;
+
+  &:hover {
+    color: darken($stu_white, 15%);
+    // color: mix($stu_white, $stu_blue, 75%);
+  }
+}
+
+.text-white {
+  color: white;
+}
+
+.book-shadow {
+    border: 1px solid #ccc;
+
+  // shadowing
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
