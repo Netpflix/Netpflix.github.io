@@ -1,0 +1,54 @@
+new_arrival:
+  - name: Pfoana
+    description: |
+      In Ancient Harvard Yard, when mumps strikes an impetuous Dean's daughter's dorm room,
+      she answers Drew Pfaust's call to travel to Pforzheimer House to set things right.
+    image: pfoana.jpg
+    video: https://www.youtube.com/watch?v=E8iCMaucC7E
+    year: 2017
+    featured: true
+
+recent:
+  - name: "Star Wars: The Pforz Awakens"
+    description: |
+      Three decades after the defeat of the Harvard Yard Empire, a new threat arises. The River Order attempts to rule the College and only a ragtag group of heroes can stop them, along with the help of the Pfresistance.
+    image: the-pforz-awakens.png
+    video: https://www.youtube.com/watch?v=C-NtdRXpZTo
+    year: 2016
+    featured: false
+  - name: Pfrozen
+    description: |
+      When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse the Quad in infinite winter, her sister, Anna, teams up with a Pfoho man, his playful polar bear, and a snowman to change the weather condition.
+    image: pfrozen.png
+    video: https://www.youtube.com/watch?v=uKPrkR1wkfA
+    year: 2014
+    featured: false
+  - name: Downpfall
+    description: |
+      Traudl Junge, the final secretary for Adolf Hitler, tells of the Nazi dictator's final days in his freshman dorm before he is sentenced to the River houses.
+    image: downpfall.jpg
+    video: https://www.youtube.com/watch?v=ViEcI5FC5pc
+    year: 2010
+    featured: false
+
+popular:
+  - name: The Pfellowship of the Ring
+    description: |
+      A meek Quadling and seven blockmates set out on a journey to destroy the One Ring and the Dark Lord Adams.
+    image: pfellowship-of-the-ring.png
+    featured: false
+  - name: Pfinding Nemo
+    description: |
+      After his son is captured in the Charles River Reef and taken to Mather House, a timid clownfish sets out on a journey to bring him Pfohome.
+    image: pfinding-nemo.png
+    featured: false
+  - name: Back to the Pfuture
+    description: |
+      A young man is accidentally sent thirty years into the past in a time-traveling Quad Shuttle invented by his friend, Dr. Carl Pforzheimer, and must make sure his college-age parents unite in order to save his own existence.
+    image: back-to-the-pfuture.png
+    featured: false
+  - name: Skypfall
+    description: |
+      Bond's loyalty to PF is tested when her past comes back to haunt her. Whilst PfI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.
+    image: skypfall.png
+    featured: false

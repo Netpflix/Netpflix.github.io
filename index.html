@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <h3>New on Netpflix</h3>
+
+  {% for movie in site.data.movies.new_arrival %}
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <img src="/assets/img/posters/{{ movie.image }}" alt="{{ movie.name }}" class="img-fluid centered" />
+          </div>
+          <div class="col-xs-12 col-sm-9">
+            <h4 class="card-title">{{ movie.name }}</h4>
+
+            <h5>
+                <span class="text-danger">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+                &nbsp; &nbsp;
+                <div class="badge badge-secondary">{{ movie.year }}</div>
+            </h5>
+
+            <p class="card-text lead">
+              {{ movie.description }}
+            </p>
+
+            <a href="{{ movie.video }}" class="btn btn-danger btn-lg btn-block" target="_blank">
+              <i class="fas fa-play"></i>
+              Watch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+
+  <h3>Recently Viewed</h3>
+
+
+  <h3>Popular on Netpflix</h3>
+
+
+</div>
