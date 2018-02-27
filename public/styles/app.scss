@@ -3,12 +3,13 @@
 // --------------
 */
 // Import Bootstrap
-@import "../../node_modules/bootstrap/less/bootstrap.less";
-@import "../../node_modules/bootswatch/cyborg/variables.less";
-@import "../../node_modules/bootswatch/cyborg/bootswatch.less";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootswatch/dist/cyborg/_variables.scss";
+@import "../../node_modules/bootswatch/dist/cyborg/_bootswatch.scss";
 // Constants
-@poster_hover_scale: 1.2;
-@white: #EEE;
+$poster_hover_scale: 1.2;
+$white: #EEE;
+
 // Rules
 #page-main {
     // to account for sticky header bar
@@ -20,10 +21,11 @@
 .movie-poster {
   cursor: pointer;
   transition: transform 0.25s ease;
+
   &:hover {
     // transform: scale(@poster_hover_scale, @poster_hover_scale);
     // box-shadow: 0 0 6px 12px black;
-    transform: scale(@poster_hover_scale, @poster_hover_scale);
+    transform: scale($poster_hover_scale, $poster_hover_scale);
     z-index: 100;
   }
   .movie-details {
@@ -57,7 +59,7 @@
 }
 
 .white-text {
-    color: @white;
+    color: $white;
 }
 
 .centered {
