@@ -1,9 +1,15 @@
 ---
 ---
 
-@import "variables";
+// @import "variables";
+// @import "bootstrap/scss/bootstrap";
+// @import "bootswatch/theme/variables";
+// @import "bootstrap/scss/bootstrap";
+// @import "bootswatch/theme/bootswatch";
+@import "bootswatch/theme/variables";
 @import "bootstrap/scss/bootstrap";
+@import "bootswatch/theme/bootswatch";
 
-.content {
-  font-size: $custom-font-size;
-}
+// .content {
+//   font-size: $custom-font-size;
+// }
