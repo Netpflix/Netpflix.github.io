@@ -31,9 +31,8 @@ markdown: kramdown
 
 # Set up SASS for bootstrap
 sass:
-    load_paths:
-        - _sass
-        - node_modules
+    sass_dir: node_modules
+
 
 
 # Exclude from processing.
