@@ -31,7 +31,7 @@ markdown: kramdown
 
 # Set up SASS for bootstrap
 sass:
-    sass_dir: node_modules
+    sass_dir: assets
 
 
 
