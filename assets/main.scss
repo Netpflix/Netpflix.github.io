@@ -10,6 +10,65 @@
 @import "bootstrap/scss/bootstrap";
 @import "bootswatch/dist/cyborg/bootswatch";
 
-// .content {
-//   font-size: $custom-font-size;
-// }
+// Constants
+$poster_hover_scale: 1.2;
+$white: #EEE;
+// Rules
+#page-main {
+    // to account for sticky header bar
+    padding-top: 60px;
+}
+.brand-img {
+  height: 24px;
+}
+.movie-poster {
+  cursor: pointer;
+  transition: transform 0.25s ease;
+  &:hover {
+    // transform: scale(@poster_hover_scale, @poster_hover_scale);
+    // box-shadow: 0 0 6px 12px black;
+    transform: scale($poster_hover_scale, $poster_hover_scale);
+    z-index: 100;
+  }
+  .movie-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+    width: 100%;
+    padding: 8px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    border-radius: inherit;
+    background: rgba(0, 0, 0, 0.5);
+
+    h4 {
+        font-size: 18px;
+    }
+
+  }
+  // show details only on hover
+  .movie-details {
+    display: none;
+  }
+  &:hover {
+    .movie-details {
+      display: block;
+    }
+  }
+}
+
+.white-text {
+    color: $white !important;
+}
+
+.centered {
+    margin: auto;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 0;
+}
