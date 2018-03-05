@@ -49,7 +49,21 @@ layout: default
   <div class="row">
     {% for movie in site.data.movies.gallery %}
         <div class="col-xs-6 col-md-3">
-          <div class="card">
+
+          <div class="card bg-dark text-white movie-card">
+            <img class="card-img" src="/assets/img/new-posters/{{ movie.image }}" alt="{{ movie.name }}">
+            <div class="card-img-overlay movie-overlay transparent">
+              <div class="movie-overlay-contents">
+                <h5 class="card-title">{{ movie.name }}</h5>
+                <p class="card-text">
+                  {{ movie.description }}
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <div class="card">
             <div class="card-body">
               <div class="row">
                   <a href="/assets/img/new-posters/{{ movie.image }}">
@@ -84,10 +98,9 @@ layout: default
                   {% endif %}
               </div>
             </div>
-          </div>
+          </div> -->
       </div>
     {% endfor %}
   </div>
-
 
 </div>
