@@ -1,4 +1,12 @@
 new_arrival:
+  - name: Pforzheimer Things
+    description: |
+      When a young boy vanishes, a Quad House uncovers a mystery involving secret experiments, terrifying supernatural pforces and one strange little girl.
+    image: pforzheimer-things.jpg
+    year: 2018
+    coming_soon: 1
+  
+gallery:
   - name: Pfoana
     description: |
       In Ancient Harvard Yard, when mumps strikes an impetuous Dean's daughter's dorm room,
@@ -6,8 +14,6 @@ new_arrival:
     image: pfoana.jpg
     video: https://www.youtube.com/watch?v=E8iCMaucC7E
     year: 2017
-
-gallery:
   - name: "Star Wars: The Pforz Awakens"
     description: |
       Three decades after the defeat of the Harvard Yard Empire, a new threat arises. The River Order attempts to rule the College and only a ragtag group of heroes can stop them, along with the help of the Pfresistance.

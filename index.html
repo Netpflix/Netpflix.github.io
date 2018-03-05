@@ -34,10 +34,17 @@ layout: default
               {{ movie.description }}
             </p>
 
+            {% if movie.video %}
             <a href="{{ movie.video }}" class="btn btn-danger btn-lg btn-block" target="_blank">
               <i class="fas fa-play"></i>
               Watch
             </a>
+            {% elsif movie.coming_soon %}
+              <a href="{{ movie.video }}" class="btn btn-danger btn-lg btn-block disabled" target="_blank">
+                <i class="fas fa-clock"></i>
+                Coming Soon
+              </a>
+            {% endif %}
           </div>
         </div>
       </div>
