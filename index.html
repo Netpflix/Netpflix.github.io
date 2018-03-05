@@ -44,6 +44,9 @@ layout: default
     </div>
   {% endfor %}
 
+  <br>
+  <br>
+
   <h3>Popular on Netpflix</h3>
 
   <div class="row">
@@ -52,12 +55,34 @@ layout: default
 
           <div class="card bg-dark text-white movie-card">
             <img class="card-img" src="/assets/img/new-posters/{{ movie.image }}" alt="{{ movie.name }}">
-            <div class="card-img-overlay movie-overlay transparent">
+            <div class="card-img-overlay movie-overlay">
               <div class="movie-overlay-contents">
-                <h5 class="card-title">{{ movie.name }}</h5>
+                <h5 class="card-title">
+                  {{ movie.name }}
+                </h5>
+                <p class="card-text lead">
+                  <span class="text-danger">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </span>
+                  &nbsp;
+                  <span class="badge badge-secondary">{{ movie.year }}</span>
+                </p>
                 <p class="card-text">
                   {{ movie.description }}
                 </p>
+
+                {% if movie.video %}
+                  <p class="card-text">
+                    <a href="{{ movie.video }}" class="btn btn-danger btn-lg btn-block" target="_blank">
+                      <i class="fas fa-play"></i>
+                      Watch
+                    </a>
+                  </p>
+                {% endif %}
               </div>
             </div>
           </div>
