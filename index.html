@@ -7,11 +7,20 @@ layout: default
   <h3>New on Netpflix</h3>
 
   {% for movie in site.data.movies.new_arrival %}
+
+    {% capture poster_url %}
+      {% if movie.video %}
+        {{ movie.video }}
+      {% else %}
+        #
+      {% endif %}
+    {% endcapture %}
+
     <div class="card">
       <div class="card-body">
         <div class="row">
           <div class="col-xs-12 col-sm-3">
-            <a href="/assets/img/new-posters/{{ movie.image }}">
+            <a href="{{ poster_url }}">
               <img src="/assets/img/new-posters/{{ movie.image }}" alt="{{ movie.name }}" class="img-fluid centered" />
             </a>
           </div>
@@ -35,11 +44,11 @@ layout: default
             </p>
 
             {% if movie.video %}
-            <a href="{{ movie.video }}" class="btn btn-danger btn-lg btn-block" target="_blank">
-              <i class="fas fa-play"></i>
-              Watch
-            </a>
-            {% elsif movie.coming_soon %}
+              <a href="{{ movie.video }}" class="btn btn-danger btn-lg btn-block" target="_blank">
+                <i class="fas fa-play"></i>
+                Watch
+              </a>
+            {% else %}
               <a href="{{ movie.video }}" class="btn btn-danger btn-lg btn-block disabled" target="_blank">
                 <i class="fas fa-clock"></i>
                 Coming Soon
