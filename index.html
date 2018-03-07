@@ -11,7 +11,7 @@ layout: default
       <div class="card-body">
         <div class="row">
           <div class="col-xs-12 col-sm-3">
-            <a href="/assets/img/new-posters/{{ movie.image }}">
+            <a href="{% if movie.video %}{{ movie.video }}{% elsif %}#{% endif %}">
               <img src="/assets/img/new-posters/{{ movie.image }}" alt="{{ movie.name }}" class="img-fluid centered" />
             </a>
           </div>
