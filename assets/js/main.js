@@ -14,9 +14,6 @@ $(function(){
 
     // turn off all other movie-overlays
     $(".movie-overlay").not(this).css("opacity", 0);
-
-    // stop from accidentally clicking the "Watch" button
-    return false;
   });
   $(".movie-overlay").on("mouseodut", function(event){
     $(this).css("opacity", 0);
