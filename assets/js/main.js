@@ -8,14 +8,17 @@
 // });
 
 $(function(){
-  $(".movie-overlay").on("click mouseover", function(event){
+  $(".movie-overlay").on("click", function(event){
     // turn on this movie-overlay
     $(this).css("opacity", 1);
 
     // turn off all other movie-overlays
     $(".movie-overlay").not(this).css("opacity", 0);
+
+    // stop from accidentally clicking the "Watch" button
+    return false;
   });
-  $(".movie-overlay").on("mouseout", function(event){
+  $(".movie-overlay").on("mouseodut", function(event){
     $(this).css("opacity", 0);
   });
 });
