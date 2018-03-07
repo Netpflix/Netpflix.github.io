@@ -3,9 +3,9 @@ new_arrival:
     description: |
       When a young boy vanishes, a Quad House uncovers a mystery involving secret experiments, terrifying supernatural pforces and one strange little girl.
     image: pforzheimer-things.jpg
+    video: https://www.youtube.com/watch?v=1H_QYswZULU
     year: 2018
-    coming_soon: 1
-
+    category: new_arrival
 gallery:
   - name: Pfoana
     description: |
@@ -14,6 +14,7 @@ gallery:
     image: pfoana.jpg
     video: https://www.youtube.com/watch?v=E8iCMaucC7E
     year: 2017
+    category: recent
   - name: "Star Wars: The Pforz Awakens"
     description: |
       Three decades after the defeat of the Harvard Yard Empire, a new threat arises. The River Order attempts to rule the College and only a ragtag group of heroes can stop them, along with the help of the Pfresistance.
