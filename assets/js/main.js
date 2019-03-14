@@ -14,6 +14,12 @@ $(function(){
 
     // turn off all other movie-overlays
     $(".movie-overlay").not(this).css("opacity", 0);
+
+    // make it impossible to accidentally click through
+    // the overlay (if you tap in the right place,
+    // it skips the overlay and goes right to YouTube
+    // -- not ideal!)
+    event.preventDefault();
   });
   $(".movie-overlay").on("mouseout", function(event){
     $(this).css("opacity", 0);
