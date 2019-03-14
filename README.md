@@ -34,3 +34,6 @@ bundle exec jekyll serve --host 0.0.0.0
 ## Guidelines for adding a new video
 
 Add a movie poster image to <assets/img/new-posters>. It should be 720 (width) x 1113 (height).
+
+[PhotoPea](https://www.photopea.com/) is a good online image editor (like Photoshop),
+if you need one.
