@@ -16,3 +16,9 @@ bundle exec jekyll serve
 ```
 
 Then open up <http://127.0.0.1:4000> in your browser to view the site.
+
+## Editing in the cloud
+
+[Open Gitpod here](https://gitpod.com#https://github.com/Netpflix/Netpflix.github.io)
+and you can edit this page instantly. Once the IDE opens, you'll see a site open
+on port 4000.
