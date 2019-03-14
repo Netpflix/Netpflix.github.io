@@ -1,12 +1,21 @@
 new_arrival:
+  - name: "Planet Earth: Ursus pforzheimicus"
+    description: |
+        Narrated by David Attenpforough, these excerpts from BBC's Planet Earth
+        show the great polar bear, Ursus pforzheimicus, in its natural environment,
+        the Quad lawn.
+    image: planet-earth.jpg
+    video: https://www.youtube.com/watch?v=bZf3mzsMCsY
+    year: 2019
+    category: new_arrival
+gallery:
   - name: Pforzheimer Things
     description: |
       When a young boy vanishes, a Quad House uncovers a mystery involving secret experiments, terrifying supernatural pforces and one strange little girl.
     image: pforzheimer-things.jpg
     video: https://www.youtube.com/watch?v=1H_QYswZULU
     year: 2018
-    category: new_arrival
-gallery:
+    category: recent
   - name: Pfoana
     description: |
       In Ancient Harvard Yard, when mumps strikes an impetuous Dean's daughter's dorm room,
