@@ -1,4 +1,4 @@
-// Solar 4.0.0
+// Solar 4.3.1
 // Bootswatch
 
 //
@@ -37,6 +37,8 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
+
+$enable-gradients: true;
 
 // Body
 
@@ -169,3 +171,7 @@ $breadcrumb-bg:                     $component-active-bg !default;
 
 $close-color:                       $body-color !default;
 $close-text-shadow:                 none !default;
+
+// Code
+
+$pre-color:                         inherit !default;
