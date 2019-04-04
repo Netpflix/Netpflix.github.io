@@ -27,6 +27,11 @@ if you need one.
 Also add metadata to <_data/movies.yml>.
 
 
+### Testing
+
+Check <netpflix.com> once you've committed changes. This repo uses Github Pages so your
+changes are auto built.
+
 ## Other info
 
 ### Running locally
