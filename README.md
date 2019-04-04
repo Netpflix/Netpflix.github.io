@@ -37,4 +37,4 @@ Add a movie poster image to <assets/img/new-posters>. It should be 720 (width) x
 [PhotoPea](https://www.photopea.com/) is a good online image editor (like Photoshop),
 if you need one.
 
-Also add metadata to </_data/movies.yml>.
+Also add metadata to <_data/movies.yml>.
