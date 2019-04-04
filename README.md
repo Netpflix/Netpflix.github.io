@@ -34,6 +34,10 @@ changes are auto built.
 
 ## Other info
 
+### Getting involved
+
+Ask an old HoCo member or email neelmehta96 at gmail.com if you need ownership of the Github.
+
 ### Running locally
 
 You can run this repo locally too. Once you've cloned the repo, run the following in your terminal. You'll need to have Ruby installed (it's pre-installed on macOS and most Linux distributions.)
