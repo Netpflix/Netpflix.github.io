@@ -11,7 +11,7 @@ and it'll go to the HoCo email.
 
 First get the development environment set up. 
 
-[Open our cloud editor here](https://gitpod.com#https://github.com/Netpflix/Netpflix.github.io)
+[Open our cloud editor here](https://gitpod.io#https://github.com/Netpflix/Netpflix.github.io)
 and you can edit this page instantly. Once the IDE opens, you'll see a site open
 on port 4000.
 
