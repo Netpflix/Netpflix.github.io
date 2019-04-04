@@ -39,6 +39,11 @@ changes are auto built.
 
 ## Other info
 
+### Secret features
+
+If you want to tease your video, update the site with your poster and text but don't include the YouTube link.
+It'll automatically show "coming soon" in place of the watch button.
+
 ### Running locally
 
 You can run this repo locally too. Once you've cloned the repo, run the following in your terminal. You'll need to have Ruby installed (it's pre-installed on macOS and most Linux distributions.)
