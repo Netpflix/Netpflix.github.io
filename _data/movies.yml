@@ -1,10 +1,10 @@
 new_arrival:
-  - name: "Planet Earth: Ursus pforzheimicus"
+  - name: "Planet Earth: A Quad Experience"
     description: |
-        Narrated by David Attenpforough, these excerpts from BBC's Planet Earth
+        Narrated by David Attenpforough, these excerpts from BBC's Pflanet Earth
         show the great polar bear, Ursus pforzheimicus, in its natural environment,
-        the Quad lawn.
-    image: planet-earth.jpg
+        the Quad Lawn.
+    image: pflanet-earth.png
     video: https://www.youtube.com/watch?v=bZf3mzsMCsY
     year: 2019
     category: new_arrival
