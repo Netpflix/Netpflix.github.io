@@ -1,5 +1,10 @@
 # Netpflix
 
+## Getting started
+
+Log into the `pforzheimer` Github account. HoCo will have the password. Worst case you can do "forgot password"
+and it'll go to the HoCo email.
+
 ## Adding a new video
 
 ### Setting up environment
@@ -33,10 +38,6 @@ Check <netpflix.com> once you've committed changes. This repo uses Github Pages 
 changes are auto built.
 
 ## Other info
-
-### Getting involved
-
-Ask an old HoCo member or email neelmehta96 at gmail.com if you need ownership of the Github.
 
 ### Running locally
 
